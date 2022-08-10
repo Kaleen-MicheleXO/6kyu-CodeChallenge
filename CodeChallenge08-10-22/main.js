@@ -52,9 +52,9 @@ var encryptThis = function(text) {
     let arr=[]
      for(let i=0;i<=str.length-1;i++){
       if(str[i].length===1){
-      arr.push(str[i].charCodeAt().toString())   
+      arr.push(str[i].charCodeAt())   
     }else if(str[i].length===2){
-       arr.push(str[i][0].charCodeAt().toString()+ str[i][1])
+       arr.push(str[i][0].charCodeAt()+ str[i][1])
    }else{
       arr.push(str[i][0].charCodeAt()+ str[i][str[i].length-1] +str[i].slice(2,-1) + str[i][1])}
      }
