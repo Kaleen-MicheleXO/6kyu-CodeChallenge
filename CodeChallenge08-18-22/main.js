@@ -7,7 +7,17 @@
 // 4 --> 0 (because 4 is already a one-digit number)
 
 //Examples
-persistence(39),3
-persistence(4),0
-persistence(25),2
-spersistence(999),4
+// persistence(39),3
+// persistence(4),0
+// persistence(25),2
+// spersistence(999),4
+
+
+function persistence(num) {
+    let answer=0
+    while(num.toString().split('').length!==1){
+   num= num.toString().split('').reduce((sum,curr)=>sum*curr)
+     answer++
+     }
+    return answer
+  }
